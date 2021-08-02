@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="styles.css"/>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,15 +22,15 @@
         </header> 
 
         <section id="recherchefiltre"> <!--recherche et filtres-->
-            <h3><span class="xlsize">Trouvez votre hébergement pour des vacances de rêve</span></h3>
+            <h2><span class="xlsize">Trouvez votre hébergement pour des vacances de rêve</span></h2>
             <p> En plein centre ville ou en pleine nature </p>
             <form id="barrerecherche" method="post" action="traitement.php">
-                <span class="iconemap"><label for="ville"><i class="fas fa-map-marker-alt"></i></label></span>
+                <span class="iconemap"><i class="fas fa-map-marker-alt"></i></span>
                 <span class="recherchemarseille"><input type="search" name="recherche" id="ville" placeholder="  Marseille,France" size="25"/></span>
-                <span class="bouton"><button>Rechercher</button></span>
+                <button>Rechercher</button>
             </form>
             <div id="conteneurfiltre">
-                <div class="h3filtre"><h3>Filtres</h3></div>
+                <div class="h3filtre"><h2>Filtres</h2></div>
                 <div class="filtre"><i class="fas fa-money-bill-wave fa-color"></i><h3>Économique</h3></div>
                 <div class="filtre"><i class="fas fa-child fa-color"></i><h3>Familial</h3></div>
                 <div class="filtre"><i class="fas fa-heart fa-color"></i> <h3>Romantique</h3></div> 
@@ -42,7 +43,7 @@
         </section>
  
         <section id="article_aside">
-            <article id="hebergements"> <!--Hebergements-->
+            <div id="hebergements"> <!--Hebergements-->
                 <div id="grosblochebergement">
                     <h3>Hébergements à Marseille</h3>
                     <div class="cartehebergement">
@@ -160,7 +161,7 @@
                     </div>
                 </div>
                 <div id="aplus"><a href="#">Afficher plus</a></div>
-            </article>
+            </div>
 
             <aside id="populaire"><!--aside populaire-->
                 <div id="descriptionpopulaire">  
@@ -212,7 +213,7 @@
                             <div class="descriptioncolumn">
                                 <h4>Hôtel tout bleu et blanc</h4>
                                 <p>Nuit à partir de <span class="gras">68€</span></p>
-                                <div class="etoiles">
+                                <div class="etoilesbas">
                                     <i class="fas fa-star fa-color"></i>
                                     <i class="fas fa-star fa-color"></i>
                                     <i class="fas fa-star fa-color"></i>
