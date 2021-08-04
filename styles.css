@@ -17,108 +17,64 @@ span.gras {
     color: #DEEBFF;
 }
 
-span.grasbleu {
-    font-weight: bold;
-    color:#0065FC;
-    padding-left: 35px;
-    padding-right: 35px;
-}
 
-span.xlsize {
-    font-size: x-large;
-}
 
 /*header*/
 
 
+#blocnav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
 
-.nav a {
+
+.logo {
+   align-self: flex-start; 
+   padding-left: 30px;
+}
+
+nav img {
+    width: 150px;
+    padding-top: 24px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-self: flex-end;
+}
+
+nav a {
     text-decoration: none;
     color: #0065FC;
     font-weight: bold;
-    padding-left: 30px;
-    padding-right: 20px;
-    margin-top: -119px;
+    font-size: 18px;
+}
+
+nav li {
+    padding-right: 40px;
 }
 
 
-.nav img {
-    width: 198px;
-    padding-top: 69px;
-}
-
-#blocnav {
-    display: flex;
-    align-content: space-between;
-    align-items: center;
-    color: #0065FC;
-    font-size: large;
-    margin-top: -26px;
-}
-
-.logo {
-   display: flex;
-   align-self: flex-start; 
-}
-
-.logo img {
-    width: 223px;
-    margin-right: 780px;
-    margin-top: 59px;
-    margin-left: 30px;
-}
-
-.inscription {
-    margin-top: 100px;
-    padding-right: 30px;
-}
-
-.inscription a {
-    text-decoration: none;
-}
-
-.inscription a:hover {
+.borduretop {
     border-top: 3px solid #0065FC;
-    padding-top: 97px;
+    padding-top: 60px;
 }
 
-/*
-.nav:nth-child(1){
-    align-self: flex-start;
-    flex-basis: 80%;
-}
-*/
+nav a:hover {
+     border-top: 3px solid #0065FC;
+     padding-top: 60px;
 
-.nav:nth-child(2) {
-    flex-basis: 12%;
-    padding-top: 97px;
-    border-top: 3px solid #0065FC;
-}
-.nav:nth-child(3) {
-    flex-basis: 12%;
-    margin-top: 1px;
-    margin-top: 101px;
 }
 
-/*
-
-.nav:nth-child(4) {
-    flex-basis: 8%;
-    margin-top: 100px;
-}
-
-*/
-
-#inscription {
-    margin-top: 100px;
+span.grasbleu {
+    font-weight: bold;
+    color:#0065FC;
 }
 
 
-.nav a:hover {
-    
-    border-top: 3px solid #0065FC;
-    padding-top: 97px;
-}
 
 /*section 1*/
 
@@ -126,21 +82,16 @@ span.xlsize {
     margin-left: 30px;
 }
 
-#recherchefiltre p {
-    margin-top: -10px;
-}
-
 
 #barrerecherche {
     margin-bottom: 50px;
 }
 
-
 input {
     font-family: 'Raleway';
     font-weight: bold;
     color: black;
-    font-size: medium;
+    font-size: 15px;
     height: 45px;
     width: 250px;
     border-top: 1px solid #F2F2F2;
@@ -149,8 +100,6 @@ input {
     border-right: none;
 }
 
-
-
 button {
     border: none;
     font-family: 'Raleway';
@@ -158,7 +107,7 @@ button {
     color: white;
     background-color: #0065FC;
     cursor: pointer;
-    font-size: medium;
+    font-size: 15px;
     padding: 13px;
     margin-left: -4px;
     border-radius: 0 10px 10px 0;
@@ -183,7 +132,6 @@ button {
 #conteneurfiltre {
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 
@@ -224,8 +172,7 @@ button {
 #info {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    margin-top: -15px;
+    margin-bottom: 30px;
 }
 
 .iconeinfo {                            
@@ -235,7 +182,6 @@ button {
     border-radius: 25px;
     justify-content: center;
     display: flex;
-    margin-top: -25px;
     margin-right: 10px;
 }
 
@@ -252,12 +198,12 @@ button {
     margin-left: 30px;
 }
 
-#hebergements h3 {
-    margin-right: 520px;  
-    margin-top: 13px;
-    margin-bottom: 32px;  
-    padding-top: 27px;
-    font-size: x-large;
+#hebergements h3 { 
+    padding-bottom: 11px;  
+    padding-top: 22px;
+    padding-left: 25px;
+    font-size: 24px;
+    width: 100%;
 }
 
 #grosblochebergement {
@@ -308,9 +254,7 @@ button {
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     flex: 2;
-    justify-content: space-around;
 }
 
 
@@ -326,10 +270,10 @@ button {
 
 #aplus {
     font-weight: bold;
-    margin-left: -700px;
-    margin-top: 7px;
+    padding-top: 7px;
     padding-bottom: 32px;
-    font-size: large;
+    font-size: 20px;
+    padding-left: 50px;
 }
 
 
@@ -348,15 +292,14 @@ button {
 
 #descriptionpopulaire {
     display: flex;
-    align-items: flex-start; 
     margin-top: 10px;
 }
 
 #descriptionpopulaire h3 {
-    margin-left: 40px;
+    padding-left: 40px;
     padding-top: 15px;
     margin-bottom: -3px;
-    font-size: x-large;
+    font-size: 24px;
 }
 
 #descriptionpopulaire i {
@@ -414,16 +357,14 @@ button {
 }
 
 #activites {
-    display: flex;
     margin-bottom: 71px;
 }
 
 
-#h3activite h3{
+#activites h3{
     padding-top: 60px;
-    margin-bottom: -55px;
-    font-size: x-large;
-    margin-left: 30px;
+    padding-left: 35px;
+    font-size: 24px;
 }
 
 .blocactivite1 {
@@ -483,7 +424,6 @@ button {
 
 #testsection {
     display: flex;
-    margin-top: 80px;
 }
 
 .bloc2activites {
@@ -498,57 +438,23 @@ button {
     justify-content: flex-start;
     background-color: #F2F2F2;
     color: black;
-    margin-left: -10px;
-    margin-right: -8px;
-    padding-left: 10px;
+    padding-left: 30px;
 }
 
-.element:nth-child(1)
-{
- flex-basis: 30%;
- margin-left: 2%;  
+
+.element {
+    padding-right: 250px;
 }
 
-.element:nth-child(2)
-{
- flex-basis: 30%;  
-}
 
 /*media queries*/
-@media screen and (min-width: 1514px) and (max-width: 1536px) {
-    .body {
-        display: block;
-        width: 100%;
-    }
 
-}
-
-@media screen and (min-width: 601px) and (max-width:1514px) {
-
-#conteneurfiltre {
-    align-items: center;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
-}
-
-.filtre {
-    display: flex;
-    align-items: center;
-    border: 3px solid #F2F2F2;  
-    height: 50px;
-    border-radius: 30px;
-    margin-right: 20px;
-    padding-right: 20px;
-}
-
-
-}
 
 @media all and (min-width: 320px) and (max-width:612px) {
 
 
 
-    #blocnav {
+#blocnav {
     display: block;
     color: #0065FC;
     font-size: small;
@@ -567,37 +473,9 @@ button {
 
 .nav a:hover {
     border-top: none;
-    border-bottom: none
+    border-bottom: none;
     padding-top: 0px;
     padding-bottom: 0px;
-}
-
-
-.nav:nth-child(2) {
-
-    border-bottom: 3px solid #0065FC;
-    display: flex;
-    border-top: none;
-    flex-basis: 0%;
-    padding-left: 9%;
-    padding-top: 8%;
-    width: 26%;
-    margin-left: -2%;
-    font-size: x-small;
-    padding-bottom: 5px;
-}
-.nav:nth-child(3) {
-
-    display: flex;
-    border-bottom: 3px solid lightgrey;
-    color: black;
-    padding-left: 12%;
-    flex-basis: 0%; 
-    margin-top: -20px; 
-    width: 30%;
-    margin-left: 33%;
-    font-size: x-small;
-    padding-bottom: 5px;
 }
 
 
@@ -877,16 +755,17 @@ button {
 
 #h3activite h3 {
     padding-top: 0px;
-    margin-bottom: 0px;
-    font-size: medium;
-    margin-left: 0px;
     padding-left: 10px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-size: medium;
+    
+    
 }
 
 #activites {
     display: block;
-    margin: 0px 0px 0px 0px;
-    margin-bottom: 0px;
+    margin : 0px;
 }
 
 
@@ -967,20 +846,17 @@ button {
 }
 
 
-.element:nth-child(1) {
-    flex-basis: 0%;
-    margin-left: 0%; 
+
+
+
+@media screen and (min-width: 613px) and (max-width:1514px) {
+
+
 }
 
+@media screen and (min-width: 1515px) and (max-width: 1536px) {
+   
 
-.element h3 {
-    font-size: medium;
 }
 
-.element p {
-    font-size: small;
-}
-
-.element:nth-child(2) {
-    flex-basis: 0%; 
 }

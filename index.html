@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="styles.css"/>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,32 +12,52 @@
     </head>
 
     <body>
-        <header>
+        <header> 
             <nav id="blocnav">
-                <div class="logo"><img src="logo/Reservia.svg" alt="logo reservia"/></div>
-                <div class="nav"><a href="#hebergements">Herbergement</a></div>
-                <div class="nav"><a href="#activites">Activités</a></div>
-                <div class="inscription"><a href="#sinscrire"><span class="grasbleu">S'inscrire</span></a></div>  
+                <div class="logo">
+                    <img src="logo/Reservia.svg" alt="logo reservia"/>
+                </div>
+                <ul>
+                    <li><a href="#hebergements"><span class="borduretop">Herbergement</span></a></li>
+                    <li><a href="#activites">Activités</a></li>
+                    <li><a href="#sinscrire"><span class="grasbleu">S'inscrire</span></a></li>
+                </ul>
             </nav>
         </header> 
 
         <section id="recherchefiltre"> <!--recherche et filtres-->
-            <h2><span class="xlsize">Trouvez votre hébergement pour des vacances de rêve</span></h2>
+            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p> En plein centre ville ou en pleine nature </p>
             <form id="barrerecherche" method="post" action="traitement.php">
                 <span class="iconemap"><i class="fas fa-map-marker-alt"></i></span>
-                <span class="recherchemarseille"><input type="search" name="recherche" id="ville" placeholder="  Marseille,France" size="25"/></span>
+                <span class="recherchemarseille"><input type="search" name="recherche" id="ville" placeholder="  Marseille,France"/></span>
                 <button>Rechercher</button>
             </form>
             <div id="conteneurfiltre">
-                <div class="h3filtre"><h2>Filtres</h2></div>
-                <div class="filtre"><i class="fas fa-money-bill-wave fa-color"></i><h3>Économique</h3></div>
-                <div class="filtre"><i class="fas fa-child fa-color"></i><h3>Familial</h3></div>
-                <div class="filtre"><i class="fas fa-heart fa-color"></i> <h3>Romantique</h3></div> 
-                <div class="filtre"><i class="fas fa-dog fa-color"></i><h3>Animaux autorisés</h3></div>
+                <div class="h3filtre">
+                    <h2>Filtres</h2>
+                </div>
+                <div class="filtre">
+                    <i class="fas fa-money-bill-wave fa-color"></i>
+                    <h3>Économique</h3>
+                </div>
+                <div class="filtre">
+                    <i class="fas fa-child fa-color"></i>
+                    <h3>Familial</h3>
+                </div>
+                <div class="filtre">
+                    <i class="fas fa-heart fa-color"></i>
+                    <h3>Romantique</h3>
+                </div> 
+                <div class="filtre">
+                    <i class="fas fa-dog fa-color"></i>
+                    <h3>Animaux autorisés</h3>
+                </div>
             </div> 
             <div id="info"> 
-                <div class="iconeinfo"><i class="fas fa-info fa-xs fa-color"></i></div> 
+                <div class="iconeinfo">
+                    <i class="fas fa-info fa-xs fa-color"></i>
+                </div> 
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>             
         </section>
@@ -225,14 +245,11 @@
                     </a>
                 </div>
             </aside>
-        </section> 
+        </section>  
 
-
-        
-        <div id="h3activite">
-           <h3>Activités à Marseille</h3>
-        </div>
+       
         <section id="activites"><!--Activités à Marseille-->
+            <h3>Activités à Marseille</h3>
             <div id="testsection">
                 <div class="blocactivite1">
                     <div class="carteactivite">
