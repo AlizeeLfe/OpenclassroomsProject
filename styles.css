@@ -24,11 +24,9 @@ header {
 
 #blocnav {
     display: flex;
-    justify-content: flex-end;
     padding-bottom: 40px;
     padding-top: 36px;
 }
-
 
 .logo img {
     width: 160px;
@@ -39,7 +37,6 @@ header {
 nav ul {
     list-style-type: none;
     display: flex;
-    align-self: flex-end;
 }
 
 nav a {
@@ -65,9 +62,7 @@ nav a:hover {
     padding-top: 48px;
 }
 
-span.grasbleu {
-    font-weight: bold;
-    color:#0065FC;
+#subscribe {
     padding-left: 10px;
 }
 
@@ -93,9 +88,7 @@ input {
     border-right: none;
 }
 
-
 button {
-    border: none;
     font-family: 'Raleway';
     font-weight: bold;
     color: white;
@@ -104,13 +97,13 @@ button {
     font-size: 15px;
     padding: 14px 13px 13px 13px;
     margin-left: -4px;
+    border: none;
     border-radius: 0 10px 10px 0;
 }
 
 span.loupe {
     display: none;
 }
-
 
 .iconemap {
     background-color: #F2F2F2;
@@ -249,8 +242,8 @@ span.loupe {
     font-weight: bold;
     padding-top: 7px;
     padding-bottom: 32px;
-    font-size: 20px;
     padding-left: 50px;
+    font-size: 20px;
 }
 
 /*POPULAIRE (aside)*/          
@@ -322,7 +315,6 @@ span.loupe {
     padding: 5px;
 }
 
-
 /*ACTIVITES*/
 .carteactivite a {
     text-decoration: none;
@@ -357,6 +349,11 @@ span.loupe {
     cursor: pointer;
     width: 340px;
     height: 557px;
+}
+
+.carteactiviteverticale a {
+    text-decoration: none;
+    color: black;
 }
 
 .imageactiviteverticale h4 {
@@ -411,7 +408,6 @@ span.loupe {
     width: 30%;
 }
 
-
 /*VERSION MOBILE*/
 @media all and (min-width: 324px) and (max-width:600px) {
 
@@ -421,17 +417,15 @@ header {
 }
 
 .logo img {
-    width: 17%;
+    width: 100px;
     padding-top: 4px;
     padding-bottom: 30px;
-    width: 100px;
-    padding-left: 0px;
+    padding-left: 15px;
 }
 
 #blocnav {
     padding-bottom: 0px;
     padding-top: 0px;
-    justify-content: flex-start;
 }
 
 #blocnav a {
@@ -439,22 +433,31 @@ header {
 }
 
 nav ul {
-align-content: flex-start;
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 nav li {
     padding-right: 0;
+    padding-bottom: 10px;
+}
+
+#search {
+    width: 50%;
+    border-bottom: 3px solid blue;
+    text-align: center;
+}
+
+#activity {
+    width: 50%;
+    border-bottom: 3px solid lightgray;
+    color: black;
+    text-align: center;
 }
 
 .borduretop {
-    border-bottom: 3px solid;
     border-top: none;
-    padding-top: 0px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 6px;
 }
 
 nav a:hover {
@@ -463,21 +466,16 @@ nav a:hover {
 }
 
 .bordureactivite {
-    border-bottom: 3px solid lightgrey;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 6px;
-    color: grey;
+    color: gray;
 }
 
-span.grasbleu {
-    display: flex;
-    font-size: 14px;
-    padding-left: 0px;
-    padding-right: 0px;
+#subscribe {
     position: absolute;
-    top: 20px;
-    right: 11px;
+    bottom: 64px;
+    right: 15px;
 }
 
 span.rechercher {
@@ -489,13 +487,14 @@ span.loupe {
 }
 
 #recherchefiltre {
-    padding-left: 5px;
+    padding-left: 15px;
     padding-right: 9px;
 }
 
 #recherchefiltre h2 {
     font-size: 18px;
     padding-top: 20px;
+    padding-right: 18px;
 }
 
 #recherchefiltre p {
@@ -511,21 +510,21 @@ span.loupe {
 .iconemap {
     margin-right: 0px;
     font-size: 15px;
-    padding: 14px 14px 17px 14px;
+    padding: 11px 14px 13px 14px;
 }
 
 input {
     width: 200px;
     font-size: 13px;
-    height: 48px;
+    height: 41px;
     margin-left: -4px;
     margin-right: -4px;
 }
 
-
 button {
     font-size: 15px;
-    padding: 14px 12px 16px 7px;
+    padding: 11px 12px 12px 9px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 #conteneurfiltre {
@@ -557,20 +556,18 @@ button {
     font-size: 13px;
 }
 
-
 #info {
     display: flex;
     align-items: center;
 }
 
 .iconeinfo {
-    margin-right: 9px;
     padding-right: 7px;
     padding-left: 7px;
+    margin-right: 9px;
     margin-top: 0px;
     width: 7px;
 }
-
 
 #article_aside {
     display: flex;
@@ -581,8 +578,8 @@ button {
 #populaire {
     margin-left: -8px;
     margin-right: -8px;
-    padding-bottom: 10px;
     margin-bottom: 30px;
+    padding-bottom: 10px;
     }
 
 #descriptionpopulaire {
@@ -592,7 +589,7 @@ button {
 #descriptionpopulaire h3 {
     font-size: 18px;
     padding-left: 20px;
-    width: 81%;
+    width: 84%;
 }
 
 #descriptionpopulaire i {
@@ -638,10 +635,9 @@ button {
 }
 
 .etoilesbas {
-    padding-top: 10px;
+    padding-top: 24px;
     font-size: 13px;
 }
-
 
 #grosblochebergement {
     display: block;
@@ -800,7 +796,6 @@ header {
     justify-content: space-between;
 }
 
-
 .logo img {
     width: 160px;
     padding-top: 22px;
@@ -811,7 +806,7 @@ nav li {
     padding-right: 20px;
 }
 
-span.grasbleu {
+#sinscrire {
     padding-left: 20px;
 }
 
@@ -848,7 +843,6 @@ input {
     margin-left: -4px;
     margin-right: -4px;
 }
-
 
 button {
     font-size: 15px;
@@ -891,9 +885,9 @@ button {
 
 .iconeinfo {
     margin-right: 9px;
+    margin-top: 0px;
     padding-right: 7px;
     padding-left: 7px;
-    margin-top: 0px;
     width: 7px;
 }
 
@@ -905,8 +899,8 @@ button {
 #populaire {
     margin-left: -8px;
     margin-right: -8px;
-    padding-bottom: 10px;
     margin-bottom: 30px;
+    padding-bottom: 10px;
     }
 
 #descriptionpopulaire {
@@ -916,9 +910,9 @@ button {
 #descriptionpopulaire h3 {
     font-size: 22px;
     padding-left: 20px;
+    padding-bottom: 10px;
     width: 89%;
     margin-bottom: 0;
-    padding-bottom: 10px;
 }
 
 #descriptionpopulaire i {
@@ -1205,12 +1199,11 @@ button {
 
 .iconeinfo {
     margin-right: 9px;
+    margin-top: 0px;
     padding-right: 7px;
     padding-left: 7px;
-    margin-top: 0px;
     width: 7px;
 }
-
 
 #article_aside {
     display: flex;
@@ -1220,14 +1213,15 @@ button {
 
 .cartepopulaire {
     display: inline-block;
-    width: 32%;
+    width: 30%;
+    padding-left: 25px;
 }
 
 #populaire {
     margin-left: -8px;
     margin-right: -8px;
-    padding-bottom: 10px;
     margin-bottom: 30px;
+    padding-bottom: 10px;
     }
 
 #descriptionpopulaire {
@@ -1236,10 +1230,10 @@ button {
 
 #descriptionpopulaire h3 {
     font-size: 22px;
-    padding-left: 20px;
-    width: 94%;
-    margin-bottom: 0;
+    padding-left: 39px;
     padding-bottom: 10px;
+    width: 92%;
+    margin-bottom: 0;
 }
 
 #descriptionpopulaire i {
@@ -1258,7 +1252,7 @@ button {
 }
 
 .descriptioncolumn h4 {
-    font-size: 17px;
+    font-size: 15px;
     margin-top: 5px; 
     margin-bottom: -17px;
 }
@@ -1275,29 +1269,30 @@ button {
 }
 
 .etoiles {
-    padding-top: 3px;
+    padding-top: 23px;
     font-size: 15px;
 }
 
 .etoilesmilieu {
-    padding-top: 3px;
+    padding-top: 8px;
     font-size: 15px;
 }
 
 .etoilesbas {
-    padding-top: 3px;
+    padding-top: 23px;
     font-size: 15px;
 }
 
 
 #grosblochebergement {
     display: flex;
-    padding-right: 0;
+    padding-right: 0px;
+    padding-left:23px;
 }
 
 #hebergements h3 {
     padding-top: 0px; 
-    padding-left: 8px; 
+    padding-left: 16px; 
     padding-bottom: 0px;
     font-size: 22px;
     width: 100%;
@@ -1323,7 +1318,6 @@ button {
 
 .imagehebergement h4 {
     margin-top: 5px;
-    margin-top: 5px;
     font-size: 17px;
 }
 
@@ -1346,7 +1340,7 @@ button {
 #aplus {
     font-size: 17px;
     padding-bottom: 0px;
-    padding-left: 38px;
+    padding-left: 57px;
 }
 
 .carteactivite a {
@@ -1356,6 +1350,11 @@ button {
 
 #activites {
     margin-bottom: 71px;
+    width: 100%;
+}
+
+#testsection {
+    width: 100%;
 }
 
 #activites h3{
@@ -1366,13 +1365,23 @@ button {
 
 .blocactivite1 {
     display: flex;
-    padding-left: 30px;
+    padding-left: 20px;
+    width: 50%;
+}
+
+.carteactivite {
+    width: 100%;
 }
 
 .blocactivite2 {
     padding-left: 30px;
     display: flex;
-    padding-right: 30px;  
+    padding-right: 20px;  
+    width: 50%;
+}
+
+.carteactiviteverticale {
+    width: 50%;
 }
 
 .imageactiviteverticale {
@@ -1380,12 +1389,12 @@ button {
     border-radius: 20px;
     box-shadow: 6px 6px 6px lightgrey;
     cursor: pointer;
-    width: 231px;
+    width: unset;
     height: 361px;
 }
 
 .imageactiviteverticale h4 {
-   padding-left: 5px; 
+   padding-left: 10px; 
 }
 
 .imageactiviteverticale img {
@@ -1400,11 +1409,11 @@ button {
     border-radius: 20px;
     box-shadow: 6px 6px 6px lightgrey;
     cursor: pointer;
-    width: 231px;
+    width: unset;
 }
 
 .imageactivite img {
-    height: 103px;
+    height: 105px;
     width: 100%;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
@@ -1412,7 +1421,7 @@ button {
 
 .imageactivite h4 {
     padding-bottom: 20px;
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
 #testsection {
@@ -1422,6 +1431,7 @@ button {
 
 .bloc2activites {
     padding-left: 30px;
+    width: 47%;
 }
 
 #conteneur 

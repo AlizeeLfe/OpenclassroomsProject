@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
-        <title>Reservia, des vacances de rêve </title>
+        <title>Reservia, des vacances de rêve !</title>
     </head>
 
     <body>
@@ -18,19 +18,19 @@
                 </div>
             <nav id="blocnav">
                 <ul>
-                    <li><a href="#hebergements"><span class="borduretop">Herbergement</span></a></li>
-                    <li><a href="#activites"><span class="bordureactivite">Activités</span></a></li>
-                    <li><a href="#sinscrire"><span class="grasbleu">S'inscrire</span></a></li>
+                    <li id="search"><a href="#hebergements"><span class="borduretop">Herbergement</span></a></li>
+                    <li id="activity"><a href="#activites">Activités</a></li>
+                    <li id="subscribe"><a href="#sinscrire">S'inscrire</a></li>
                 </ul>
             </nav>
         </header> 
 
         <section id="recherchefiltre"> <!--recherche et filtres-->
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-            <p> En plein centre ville ou en pleine nature </p>
+            <p>En plein centre ville ou en pleine nature</p>
             <form id="barrerecherche" method="post" action="traitement.php">
                 <span class="iconemap"><i class="fas fa-map-marker-alt"></i></span>
-                <span class="recherchemarseille"><input type="search" name="recherche" id="ville" placeholder="  Marseille,France"/></span>
+                <input type="search" name="recherche" id="ville" placeholder="  Marseille,France"/>
                 <button>
                     <span class="rechercher">Rechercher</span>
                     <span class="loupe"><i class="fas fa-search"></i></span>
@@ -255,7 +255,7 @@
             <h3>Activités à Marseille</h3>
             <div id="testsection">
                 <div class="blocactivite1">
-                    <div class="carteactivite">
+                    <div class="carteactiviteverticale">
                         <a href="#">
                             <div class="imageactiviteverticale">
                                 <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux_Port">
@@ -284,7 +284,7 @@
                 </div> 
 
                 <div class="blocactivite2">
-                    <div class="carteactivite">
+                    <div class="carteactiviteverticale">
                         <a href="#">
                             <div class="imageactiviteverticale">
                                 <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc_national_des_Calanques">
