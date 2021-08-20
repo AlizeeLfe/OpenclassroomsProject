@@ -580,6 +580,7 @@ button {
     margin-right: -8px;
     margin-bottom: 30px;
     padding-bottom: 10px;
+    position: relative;
     }
 
 #descriptionpopulaire {
@@ -596,6 +597,8 @@ button {
 #descriptionpopulaire i {
     margin-top: 29px;
     font-size: 17px;
+    position: absolute;
+    right: 37px;
 }
 
 .imagepopulaire img {
