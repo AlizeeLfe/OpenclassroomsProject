@@ -775,8 +775,7 @@ button {
 }
 
 /*FOOTER MOBILE*/
-#conteneur 
-{
+#conteneur {
     flex-direction: column;
 }
 
@@ -813,7 +812,6 @@ nav li {
 #sinscrire {
     padding-left: 20px;
 }
-
 
 #recherchefiltre {
     padding-left: 20px;
@@ -1099,8 +1097,7 @@ button {
 }
 
 /*FOOTER MOBILE*/
-#conteneur 
-{
+#conteneur {
     flex-direction: column;
 }
 
@@ -1298,8 +1295,6 @@ button {
     font-size: 15px;
 }
 
-
-
 #grosblochebergement {
     display: flex;
     padding-right: 0;
@@ -1375,7 +1370,7 @@ button {
 #testsection {
     display: flex;
     flex-direction: row;
-    padding-left: 0;
+    padding-left: 0px;
     width: 100%;
 }
 
@@ -1389,7 +1384,7 @@ button {
 
 .imageactiviteverticale {
     height: 132px;
-    width: 83%;
+    width: 86%;
     object-fit: cover;
     border-radius: 10px 10px;
     margin-bottom: 20px;
@@ -1412,7 +1407,7 @@ button {
 }
 
 .imageactivite {
-    width: 83%;
+    width: 86%;
     height: 132px;
     margin-bottom: 20px;
     margin-left: 30px;
@@ -1441,9 +1436,7 @@ button {
 }
 
 /*FOOTER TABLETTE*/
-#conteneur 
-{
-    flex-direction: row;
+#conteneur {
     justify-content: space-around;
     padding-left: 0;
 }
@@ -1537,7 +1530,6 @@ button {
 .filtre h3 {
     font-size: 17px;
 }
-
 
 #info {
     display: flex;
@@ -1704,7 +1696,7 @@ button {
     width: 100%;
 }
 
-#activites h3{
+#activites h3 {
     padding-top: 60px;
     padding-left: 35px;
     font-size: 24px;
@@ -1781,9 +1773,7 @@ button {
     width: 47%;
 }
 
-#conteneur 
-{
-    flex-direction: row;
+#conteneur {
     justify-content: space-around;
 }
 
