@@ -176,7 +176,7 @@ span.loupe {
 #hebergements h3 { 
     padding-bottom: 11px;  
     padding-top: 22px;
-    padding-left: 25px;
+    padding-left: 15px;
     font-size: 24px;
     width: 100%;
 }
@@ -185,7 +185,6 @@ span.loupe {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -398,7 +397,6 @@ span.loupe {
 /*FOOTER*/
 #conteneur {   
     display: flex;  
-    justify-content: flex-start;
     background-color: #F2F2F2;
     color: black;
     padding-left: 30px;
