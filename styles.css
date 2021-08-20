@@ -409,7 +409,7 @@ span.loupe {
 }
 
 /*VERSION MOBILE*/
-@media all and (min-width: 52px) and (max-width: 600px) {
+@media screen and (min-width: 52px) and (max-width: 600px) {
 
 header {
     display: block;
@@ -588,8 +588,9 @@ button {
 
 #descriptionpopulaire h3 {
     font-size: 18px;
-    padding-left: 20px;
-    width: 84%;
+    padding-left: 0px;
+    width: 83%;
+    margin-left: 22px;
 }
 
 #descriptionpopulaire i {
@@ -614,7 +615,7 @@ button {
 }
 
 .imagepopulaire {
-    margin: 20px;
+    margin: 15px auto;
     width: 89%;
     height: 111px;
 }
@@ -642,6 +643,7 @@ button {
 #grosblochebergement {
     display: block;
     padding-right: 0;
+    padding-left: 15px;
 }
 
 #hebergements h3 {
@@ -712,7 +714,7 @@ button {
 #testsection {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 .blocactivite1 {
@@ -790,7 +792,7 @@ button {
 }
 
 /*GRANDS MOBILES*/
-@media all and (min-width: 601px) and (max-width: 735px) {
+@media screen and (min-width: 601px) and (max-width: 735px) {
 header {
     justify-content: space-between;
 }
@@ -911,8 +913,9 @@ button {
 
 #descriptionpopulaire h3 {
     font-size: 18px;
-    padding-left: 20px;
-    width: 84%;
+    padding-left: 0;
+    width: 86%;
+    margin-left: 31px;
 }
 
 #descriptionpopulaire i {
@@ -937,7 +940,7 @@ button {
 }
 
 .imagepopulaire {
-    margin: 20px;
+    margin: 20px auto;
     width: 89%;
     height: 111px;
 }
@@ -1112,8 +1115,6 @@ button {
 
 }
 
-
-
 /*VERSION TABLETTE*/
 @media screen and (min-width: 736px) and (max-width: 1089px) {
 
@@ -1224,7 +1225,7 @@ button {
 
 .cartepopulaire {
     display: inline-block;
-    width: 48%;
+    width: 47%;
     padding-left: 0;
 }
 
@@ -1241,9 +1242,9 @@ button {
 
 #descriptionpopulaire h3 {
     font-size: 22px;
-    padding-left: 25px;
+    padding-left: 36px;
     padding-bottom: 10px;
-    width: 92%;
+    width: 88%;
     margin-bottom: 0;
 }
 
@@ -1269,8 +1270,8 @@ button {
 }
 
 .imagepopulaire {
-    margin: 10px 6px 16px 16px;
-    width: 98%;
+    margin: 10px 6px 16px 41px;
+    width: 89%;
     height: 111px;
 }
 
@@ -1458,6 +1459,7 @@ button {
 
 }
 
+/*LAPTOP*/
 @media screen and (min-width: 1090px) and (max-width: 1440px) {
 
 header {
@@ -1533,6 +1535,7 @@ button {
     font-size: 17px;
 }
 
+
 #info {
     display: flex;
     align-items: center;
@@ -1555,7 +1558,7 @@ button {
 .cartepopulaire {
     display: inline-block;
     width: 30%;
-    padding-left: 25px;
+    padding-left: 24px;
 }
 
 #populaire {
